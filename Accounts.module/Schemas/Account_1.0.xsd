@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" targetNamespace="/T1627369663276Converted/JsonSchema" xmlns:tns="/T1627369663276Converted/JsonSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Account_Accounts" type="tns:Account_Accounts"/>
+    <xs:complexType name="Account_Accounts">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="Account_Accounts">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="AccountID" type="xs:string"/>
+                        <xs:element minOccurs="0" name="Code" type="xs:string"/>
+                        <xs:element minOccurs="0" name="Name" type="xs:string"/>
+                        <xs:element minOccurs="0" name="Type" type="xs:string"/>
+                        <xs:element minOccurs="0" name="TaxType" type="xs:string"/>
+                        <xs:element minOccurs="0" name="Description" type="xs:string"/>
+                        <xs:element minOccurs="0" name="EnablePaymentsToAccount" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Account" type="tns:Account"/>
+    <xs:complexType name="Account">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="Accounts">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="AccountID" type="xs:string"/>
+                        <xs:element minOccurs="0" name="Code" type="xs:string"/>
+                        <xs:element minOccurs="0" name="Name" type="xs:string"/>
+                        <xs:element minOccurs="0" name="Type" type="xs:string"/>
+                        <xs:element minOccurs="0" name="TaxType" type="xs:string"/>
+                        <xs:element minOccurs="0" name="Description" type="xs:string"/>
+                        <xs:element minOccurs="0" name="EnablePaymentsToAccount" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Account_Accounts_items" type="tns:Account_Accounts_items"/>
+    <xs:complexType name="Account_Accounts_items">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="AccountID" type="xs:string"/>
+            <xs:element minOccurs="0" name="Code" type="xs:string"/>
+            <xs:element minOccurs="0" name="Name" type="xs:string"/>
+            <xs:element minOccurs="0" name="Type" type="xs:string"/>
+            <xs:element minOccurs="0" name="TaxType" type="xs:string"/>
+            <xs:element minOccurs="0" name="Description" type="xs:string"/>
+            <xs:element minOccurs="0" name="EnablePaymentsToAccount" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

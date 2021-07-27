@@ -1,0 +1,16 @@
+{
+    "records": [{
+        "name": "Cloud",
+        "items": [{
+            "localTimestamp": 1627369663000,
+            "localURI": "/Accounts.module/Service Descriptors/Account_1.0.json",
+            "disabled": false,
+            "remoteTimestamp": 0,
+            "localHash": "3a66c10262c40cddb8ad1566b26f373dbe29ba5e",
+            "remoteId": "216",
+            "remoteHash": "3a66c10262c40cddb8ad1566b26f373dbe29ba5e"
+        }],
+        "url": "https://au.integration.cloud.tibco.com:443"
+    }],
+    "resources": []
+}

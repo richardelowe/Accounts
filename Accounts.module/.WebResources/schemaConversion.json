@@ -1,0 +1,12 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/Accounts.module/Service Descriptors/Account_1.0.json",
+        "conversionType": "generated",
+        "xsdSchemaTargetNamespace": "/T1627368855225Converted/JsonSchema"
+    },
+    {
+        "jsonSchemaLocation": "/Accounts.module/Service Descriptors/Account_1.0.json",
+        "conversionType": "generated",
+        "xsdSchemaTargetNamespace": "/T1627369663276Converted/JsonSchema"
+    }
+]}
