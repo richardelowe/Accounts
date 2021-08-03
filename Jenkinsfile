@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'env'
+        sh '''export PATH=$PATH:/opt/kubectl:/usr/local/bin:/opt/maven/bin
+env'''
         sh '''cd ${BUILD_NAME}
 mvn clean initialize package'''
         sh '''#!/bin/bash
