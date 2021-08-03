@@ -20,7 +20,4 @@ cp /var/lib/jenkins/workspace/${JOB_NAME}/${JOB_NAME}/target/${JOB_NAME}_1.0.0.e
     }
 
   }
-  environment {
-    PATH = '$PATH:/opt/kubectl:/usr/local/bin:/opt/maven/bin'
-  }
 }
