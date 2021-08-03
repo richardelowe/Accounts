@@ -3,8 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''export PATH=$PATH:/opt/kubectl:/usr/local/bin:/opt/maven/bin
-env'''
+        sh 'env'
         sh '''cd ${BUILD_NAME}
 mvn clean initialize package'''
         sh '''#!/bin/bash
@@ -20,5 +19,8 @@ cp /var/lib/jenkins/workspace/${JOB_NAME}/${JOB_NAME}/target/${JOB_NAME}_1.0.0.e
       }
     }
 
+  }
+  environment {
+    PATH = '$PATH:/opt/kubectl:/usr/local/bin:/opt/maven/bin'
   }
 }
