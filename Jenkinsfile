@@ -5,6 +5,7 @@ pipeline {
       steps {
         sh 'env'
         sh '''env
+export PATH=$PATH:/opt/kubectl:/usr/local/bin:/opt/maven/bin
 cd ${BUILD_NAME}
 mvn clean initialize package'''
         sh '''#!/bin/bash
@@ -12,7 +13,7 @@ mvn clean initialize package'''
 #Do the docker build
 
 #Put kubectl and the aws cli on the path
-#export PATH=$PATH:/opt/kubectl:/usr/local/bin
+export PATH=$PATH:/opt/kubectl:/usr/local/bin
 
 cd /var/scripts/${JOB_NAME}
 cp /var/lib/jenkins/workspace/${JOB_NAME}/${JOB_NAME}/target/${JOB_NAME}_1.0.0.ear .
