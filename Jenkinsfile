@@ -22,4 +22,7 @@ cp /var/lib/jenkins/workspace/${JOB_NAME}/${JOB_NAME}/target/${JOB_NAME}_1.0.0.e
     }
 
   }
+  environment {
+    BUILD_NAME = 'Accounts'
+  }
 }
