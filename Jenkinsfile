@@ -6,7 +6,7 @@ pipeline {
         sh 'env'
         sh '''env
 export PATH=$PATH:/opt/kubectl:/usr/local/bin:/opt/maven/bin
-cd ${BUILD_NAME}
+cd ${JOB_NAME}
 mvn clean initialize package'''
         sh '''#!/bin/bash
 
@@ -23,6 +23,6 @@ cp /var/lib/jenkins/workspace/${JOB_NAME}/${JOB_NAME}/target/${JOB_NAME}_1.0.0.e
 
   }
   environment {
-    BUILD_NAME = 'Accounts'
+    JOB_NAME = 'Accounts'
   }
 }
