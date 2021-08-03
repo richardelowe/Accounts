@@ -3,8 +3,10 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'env'
-        sh '''cd ${BUILD_NAME}
+        sh '''. ~/.bash_profile
+env'''
+        sh '''env
+cd ${BUILD_NAME}
 mvn clean initialize package'''
         sh '''#!/bin/bash
 
